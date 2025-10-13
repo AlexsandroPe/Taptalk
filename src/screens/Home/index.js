@@ -10,7 +10,7 @@ function Home(){
     const sendSMS = async ()=> {
         const isAvailable = await SMS.isAvailableAsync();
         if (isAvailable) {
-           const result = SMS.sendSMSAsync('+5511937359947', "Oii amigo gu, tudo bem? Testando um negócio aqui, é o alex");
+           const result = SMS.sendSMSAsync('+5511937359947', "Oii amigo, tudo bem? Testando um negócio aqui, é o alex");
         } else {
             alert('não foi possivel enviar a mensagem.');
         }
